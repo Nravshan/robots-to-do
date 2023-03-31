@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Tilt+Neon&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Tilt Neon', cursive;
+}
+h2{
+    color: rgba(0, 0, 0, 0.258);
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label input{
+    all: unset;
+}
+
+label input, form button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px #c4c4c4 solid;
+}
+
+form button {
+    color: #fff;
+    background: rgb(0, 60, 255);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boxes {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 50px 60px;
+    gap: 10px;
+    border-right: 2px gray solid;
+}
+
+.box:first-child {
+    padding: 20px 50px 60px 0px;
+}
+
+.box:last-child {
+    border: none;
+    padding: 20px 0px 60px 50px;
+}
+
+.items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.items .item {
+    width: 100%;
+    padding: 25px 25px 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 10px #e7e7e7;
+    border: 1px #cdcaca solid;
+    border-radius: 20px;
+}
+
+.items .item .top, .items .item .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items .item .bottom {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+    border: 1px rgb(199, 198, 198) solid;
+    box-shadow: 1px 1px 10px #e7e7e7    ;
+}
+
+.item .bottom .bottom__age {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.item .top img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    border: 1px rgb(4, 0, 255) solid;
+}
+
+
+    
+.cancelBtn {
+    border: none;
+    background: url(./img/cancel.svg);
+    outline: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.cancelImg {
+    color: black
+    ;
+}
